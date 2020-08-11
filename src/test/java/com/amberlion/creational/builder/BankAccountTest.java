@@ -83,5 +83,20 @@ public class BankAccountTest {
         account.setBalance(new BigDecimal("2.0"));
         Assert.assertEquals(account.getBalance(), new BigDecimal("2.0"));
     }
+    @Test
+    public void testConstructAccount() {
+        BankAccount account = new BankAccount.Builder()
+                .accountNumber(123L)
+                .withOwner("Marge")
+                .atBranch("Springfield")
+                .openingBalance(new BigDecimal("100.0"))
+                .atRate(new BigDecimal("2.5"))
+                .build();
+        Assert.assertEquals(account.getAccountNumber(), 123L);
+        Assert.assertEquals(account.getOwner(), "Marge");
+        Assert.assertEquals(account.getBranch(), "Springfield");
+        Assert.assertEquals(account.getBalance(), new BigDecimal("100.0"));
+        Assert.assertEquals(account.getInterestRate(), new BigDecimal("2.5"));
+    }
 
 }
