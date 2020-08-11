@@ -5,4 +5,9 @@ public class LinuxButton implements Button {
     public void paint() {
         System.out.println("You have created LinuxButton.");
     }
+
+    @Override
+    public String getOS() {
+        return "linux";
+    }
 }

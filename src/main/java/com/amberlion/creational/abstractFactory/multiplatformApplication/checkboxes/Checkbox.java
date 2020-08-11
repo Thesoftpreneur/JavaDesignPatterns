@@ -2,4 +2,5 @@ package com.amberlion.creational.abstractFactory.multiplatformApplication.checkb
 
 public interface Checkbox {
     void paint();
+    String getOS();
 }

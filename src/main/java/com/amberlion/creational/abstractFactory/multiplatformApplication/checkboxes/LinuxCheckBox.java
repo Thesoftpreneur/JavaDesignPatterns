@@ -5,4 +5,9 @@ public class LinuxCheckBox implements Checkbox {
     public void paint() {
         System.out.println("You have created LinuxCheckbox.");
     }
+
+    @Override
+    public String getOS() {
+        return "linux";
+    }
 }

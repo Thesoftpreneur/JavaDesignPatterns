@@ -2,4 +2,5 @@ package com.amberlion.creational.abstractFactory.multiplatformApplication.button
 
 public interface Button {
     void paint();
+    String getOS();
 }
