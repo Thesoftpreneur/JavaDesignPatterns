@@ -13,6 +13,8 @@ public class FurnitureOrder {
     private CoffeeTable coffeeTable;
     private Sofa sofa;
 
+    private FurnitureOrder () {}
+
     public FurnitureOrder(StylesFactory style) {
         chair = style.createChair();
         coffeeTable = style.createCoffeeTable();
@@ -39,12 +41,22 @@ public class FurnitureOrder {
         return order;
     }
 
-    public static void main(String[] args) {
-        FurnitureOrder orderr = FurnitureOrder.withStyle("artDeco");
-        orderr.describe();
-        StylesFactory style = new ModernFactory();
-        FurnitureOrder order = new FurnitureOrder(style);
-        order.describe();
-
+    public Chair getChair() {
+        return chair;
     }
+
+    public CoffeeTable getCoffeeTable() {
+        return coffeeTable;
+    }
+
+    public Sofa getSofa() {
+        return sofa;
+    }
+
+    public static void main(String[] args) {
+        FurnitureOrder order = FurnitureOrder.withStyle("artDeco");
+        order.describe();
+        System.out.println(order.getChair().getStyle());
+    }
+
 }
