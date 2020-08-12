@@ -5,4 +5,9 @@ public class VictorianChair implements Chair {
     public void describe() {
         System.out.println("A new Victorian chair is created");
     }
+
+    @Override
+    public String getStyle() {
+        return "victorian";
+    }
 }

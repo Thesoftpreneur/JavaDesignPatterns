@@ -5,4 +5,9 @@ public class ModernChair implements Chair {
     public void describe() {
         System.out.println("A new Modern chair is created");
     }
+
+    @Override
+    public String getStyle() {
+        return "modern";
+    }
 }

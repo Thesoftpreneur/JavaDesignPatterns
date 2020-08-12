@@ -5,4 +5,9 @@ public class VictorianCoffeeTable implements CoffeeTable {
     public void describe() {
         System.out.println("A new Victorian coffee table is created");
     }
+
+    @Override
+    public String getStyle() {
+        return "victorian";
+    }
 }

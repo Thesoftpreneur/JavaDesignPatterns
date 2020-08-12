@@ -5,4 +5,9 @@ public class ArtDecoSofa implements Sofa {
     public void describe() {
         System.out.println("A new Art Deco sofa is created");
     }
+
+    @Override
+    public String getStyle() {
+        return "artDeco";
+    }
 }

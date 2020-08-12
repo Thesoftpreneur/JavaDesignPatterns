@@ -5,4 +5,10 @@ public class VictorianSofa implements Sofa {
     public void describe() {
         System.out.println("A new Victorian sofa is created");
     }
+
+    @Override
+    public String getStyle() {
+        return "victorian";
+    }
+
 }

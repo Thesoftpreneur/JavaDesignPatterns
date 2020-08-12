@@ -5,4 +5,9 @@ public class ModernSofa implements Sofa {
     public void describe() {
         System.out.println("A new Modern sofa is created");
     }
+
+    @Override
+    public String getStyle() {
+        return "modern";
+    }
 }

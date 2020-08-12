@@ -5,4 +5,9 @@ public class ArtDecoCoffeeTable implements CoffeeTable {
     public void describe() {
         System.out.println("A new Art Deco coffee table is created");
     }
+
+    @Override
+    public String getStyle() {
+        return "artDeco";
+    }
 }

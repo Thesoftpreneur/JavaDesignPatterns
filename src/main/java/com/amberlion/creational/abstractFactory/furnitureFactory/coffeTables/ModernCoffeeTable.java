@@ -5,4 +5,9 @@ public class ModernCoffeeTable implements CoffeeTable {
     public void describe() {
         System.out.println("A new Modern coffee table is created");
     }
+
+    @Override
+    public String getStyle() {
+        return "modern";
+    }
 }
