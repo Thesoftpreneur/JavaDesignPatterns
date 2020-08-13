@@ -1,4 +1,4 @@
-package com.amberlion.creational.builder;
+package com.amberlion.creational.builder.bankAccount;
 
 
 import java.math.BigDecimal;

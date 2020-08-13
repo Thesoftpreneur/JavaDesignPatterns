@@ -1,5 +1,6 @@
-package com.amberlion.creational.builder;
+package com.amberlion.creational.builder.bankAccount;
 
+import com.amberlion.creational.builder.bankAccount.BankAccount;
 import org.junit.Assert;
 import org.junit.Test;
 
