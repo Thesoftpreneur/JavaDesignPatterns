@@ -6,6 +6,7 @@ import com.amberlion.creational.builder.carFactory.components.GPSNavigator;
 import com.amberlion.creational.builder.carFactory.components.Transmission;
 import com.amberlion.creational.builder.carFactory.components.TripComputer;
 
+
 public interface Builder {
     void setType(Type type);
     void setSeats(int seats);
