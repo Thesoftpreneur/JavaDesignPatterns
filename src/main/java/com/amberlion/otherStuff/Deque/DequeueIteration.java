@@ -24,5 +24,7 @@ public class DequeueIteration {
         deque.stream().forEach((element)-> {
             System.out.println(element);
         });
+
+        deque.forEach(System.out::println);
     }
 }
