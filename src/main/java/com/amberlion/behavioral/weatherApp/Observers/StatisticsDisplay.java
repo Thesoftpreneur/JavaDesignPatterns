@@ -3,23 +3,23 @@ package com.amberlion.behavioral.weatherApp.Observers;
 
 import com.amberlion.behavioral.weatherApp.Subjects.WeatherData;
 
-import java.util.Observable;
-import java.util.Observer;
+import java.util.*;
 
-public class CurrentConditionsDisplay implements Observer, DisplayElement{
-    Observable observable;
-    private float temperature;
-    private float humidity;
+public class StatisticsDisplay implements Observer, DisplayElement {
+    private final List<Float> temperature;
 
-    public CurrentConditionsDisplay(Observable observable) {
-        this.observable = observable;
+    public StatisticsDisplay(Observable observable) {
+        temperature = new ArrayList<>();
         observable.addObserver(this);
     }
 
     @Override
     public void display() {
-        System.out.println("Current conditions: " + temperature
-        + "F degrees and " + humidity + "% humidity");
+        DoubleSummaryStatistics doubleSummaryStatistics = temperature.stream().mapToDouble(d->d).summaryStatistics();
+        System.out.printf("Avg/Max/Min temperature = %.1f/%.1f/%.1f\n",
+                doubleSummaryStatistics.getAverage(),
+                doubleSummaryStatistics.getMax(),
+                doubleSummaryStatistics.getMin());
     }
 
     /**
@@ -28,15 +28,14 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement{
      * <code>notifyObservers</code> method to have all the object's
      * observers notified of the change.
      *
-     * @param obs the observable object.
+     * @param obs   the observable object.
      * @param arg an argument passed to the <code>notifyObservers</code>
      */
     @Override
     public void update(Observable obs, Object arg) {
         if (obs instanceof WeatherData) {
             WeatherData weatherData = (WeatherData) obs;
-            this.temperature = weatherData.getTemperature();
-            this.humidity = weatherData.getHumidity();
+            this.temperature.add(weatherData.getTemperature());
             display();
         }
     }
