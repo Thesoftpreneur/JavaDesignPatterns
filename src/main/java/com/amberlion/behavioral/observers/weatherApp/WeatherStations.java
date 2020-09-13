@@ -1,8 +1,8 @@
-package com.amberlion.behavioral.weatherApp;
+package com.amberlion.behavioral.observers.weatherApp;
 
-import com.amberlion.behavioral.weatherApp.Observers.CurrentConditionsDisplay;
-import com.amberlion.behavioral.weatherApp.Observers.StatisticsDisplay;
-import com.amberlion.behavioral.weatherApp.Subjects.WeatherData;
+import com.amberlion.behavioral.observers.weatherApp.Observers.StatisticsDisplay;
+import com.amberlion.behavioral.observers.weatherApp.Observers.CurrentConditionsDisplay;
+import com.amberlion.behavioral.observers.weatherApp.Subjects.WeatherData;
 
 public class WeatherStations {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.amberlion.behavioral.weatherApp.Subjects;
+package com.amberlion.behavioral.observers.weatherApp.Subjects;
 
 
 import java.util.Observable;

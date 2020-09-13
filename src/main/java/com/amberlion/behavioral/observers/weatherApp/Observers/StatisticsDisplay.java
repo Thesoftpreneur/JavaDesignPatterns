@@ -1,7 +1,7 @@
-package com.amberlion.behavioral.weatherApp.Observers;
+package com.amberlion.behavioral.observers.weatherApp.Observers;
 
 
-import com.amberlion.behavioral.weatherApp.Subjects.WeatherData;
+import com.amberlion.behavioral.observers.weatherApp.Subjects.WeatherData;
 
 import java.util.*;
 
