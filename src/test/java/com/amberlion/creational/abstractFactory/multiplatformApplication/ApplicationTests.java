@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ApplicationTest {
+public class ApplicationTests {
 
     @Test
     public void configureApplicationWindows() {

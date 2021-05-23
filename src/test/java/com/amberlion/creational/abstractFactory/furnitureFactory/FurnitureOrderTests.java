@@ -3,7 +3,7 @@ package com.amberlion.creational.abstractFactory.furnitureFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class FurnitureOrderTest {
+public class FurnitureOrderTests {
 
     @Test
     public void testGetFurnitureArtDeco() {

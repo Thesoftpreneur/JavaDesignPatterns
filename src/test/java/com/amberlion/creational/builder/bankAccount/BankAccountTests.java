@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 
-public class BankAccountTest {
+public class BankAccountTests {
 
     @Test
     public void testGetAccountNumber() {
