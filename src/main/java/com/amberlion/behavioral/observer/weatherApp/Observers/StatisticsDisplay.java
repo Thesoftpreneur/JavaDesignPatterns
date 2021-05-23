@@ -17,9 +17,24 @@ public class StatisticsDisplay implements Observer, DisplayElement {
     public void display() {
         DoubleSummaryStatistics doubleSummaryStatistics = temperature.stream().mapToDouble(d->d).summaryStatistics();
         System.out.printf("Avg/Max/Min temperature = %.1f/%.1f/%.1f\n",
-                doubleSummaryStatistics.getAverage(),
-                doubleSummaryStatistics.getMax(),
-                doubleSummaryStatistics.getMin());
+                this.getAverageTemp(),
+                this.getMaxTemp(),
+                this.getMinTemp());
+    }
+
+    public double getMinTemp() {
+        DoubleSummaryStatistics doubleSummaryStatistics = temperature.stream().mapToDouble(d->d).summaryStatistics();
+        return doubleSummaryStatistics.getMin();
+    }
+
+    public double getAverageTemp() {
+        DoubleSummaryStatistics doubleSummaryStatistics = temperature.stream().mapToDouble(d->d).summaryStatistics();
+        return doubleSummaryStatistics.getAverage();
+    }
+
+    public double getMaxTemp() {
+        DoubleSummaryStatistics doubleSummaryStatistics = temperature.stream().mapToDouble(d->d).summaryStatistics();
+        return doubleSummaryStatistics.getMax();
     }
 
     /**
