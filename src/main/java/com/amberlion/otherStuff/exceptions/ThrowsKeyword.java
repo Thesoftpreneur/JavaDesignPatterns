@@ -1,4 +1,4 @@
-package com.amberlion.otherStuff.Exceptions;
+package com.amberlion.otherStuff.exceptions;
 
 public class ThrowsKeyword {
     static void checkAge(int age) throws ArithmeticException {

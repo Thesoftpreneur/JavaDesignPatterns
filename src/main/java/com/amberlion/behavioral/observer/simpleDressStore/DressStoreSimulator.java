@@ -1,7 +1,7 @@
-package com.amberlion.behavioral.observer.SimpledressStore;
+package com.amberlion.behavioral.observer.simpleDressStore;
 
-import com.amberlion.behavioral.observer.SimpledressStore.observers.User;
-import com.amberlion.behavioral.observer.SimpledressStore.subjects.RedDress;
+import com.amberlion.behavioral.observer.simpleDressStore.observers.User;
+import com.amberlion.behavioral.observer.simpleDressStore.subjects.RedDress;
 
 public class DressStoreSimulator {
     public static void main(String[] args) {

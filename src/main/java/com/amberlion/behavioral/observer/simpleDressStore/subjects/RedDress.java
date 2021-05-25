@@ -1,6 +1,6 @@
-package com.amberlion.behavioral.observer.SimpledressStore.subjects;
+package com.amberlion.behavioral.observer.simpleDressStore.subjects;
 
-import com.amberlion.behavioral.observer.SimpledressStore.observers.Observer;
+import com.amberlion.behavioral.observer.simpleDressStore.observers.Observer;
 
 import java.util.ArrayList;
 

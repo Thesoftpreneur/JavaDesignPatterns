@@ -1,4 +1,4 @@
-package com.amberlion.otherStuff.Deque;
+package com.amberlion.otherStuff.deque;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

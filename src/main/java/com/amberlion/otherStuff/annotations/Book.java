@@ -1,4 +1,4 @@
-package com.amberlion.otherStuff.Annotations;
+package com.amberlion.otherStuff.annotations;
 
 public class Book {
     public String first;

@@ -1,6 +1,6 @@
-package com.amberlion.behavioral.observer.SimpledressStore.observers;
+package com.amberlion.behavioral.observer.simpleDressStore.observers;
 
-import com.amberlion.behavioral.observer.SimpledressStore.subjects.Subject;
+import com.amberlion.behavioral.observer.simpleDressStore.subjects.Subject;
 
 public class User implements Observer {
 

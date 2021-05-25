@@ -1,4 +1,4 @@
-package com.amberlion.otherStuff.Annotations;
+package com.amberlion.otherStuff.annotations;
 
 public class Play {
     public static void main(String[] args) {
