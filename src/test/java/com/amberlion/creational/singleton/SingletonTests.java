@@ -5,6 +5,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class SingletonTests {
+
+    /**
+     * Test that asserts if the second singleton is the same as the original one
+     */
     @Test
     public void testSimpleSingleton() {
 
@@ -14,6 +18,11 @@ public class SingletonTests {
         Assert.assertEquals(singletonA.getValue(), singletonB.getValue());
     }
 
+    /**
+     * Test that asserts whether the second singleton is the same as the original one
+     * and if it's thread safe (has the double null check)
+     * @throws InterruptedException
+     */
     @Test
     public void testMultiThreadSingleton() throws InterruptedException {
         ThreadObject foo = new ThreadObject("FOO");
