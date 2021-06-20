@@ -6,8 +6,11 @@ import java.time.Period;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Person is the base class that instances are created to do stream experiments
+ */
 public class Person {
-    public static enum Gender {MALE, FEMALE}
+    public enum Gender {MALE, FEMALE}
     private long id;
     private String name;
     private Gender gender;
@@ -78,8 +81,7 @@ public class Person {
         Person laynie = new Person(5, "Laynie", Gender.FEMALE, LocalDate.of(2012, Month.DECEMBER,13), 0.0);
         Person lee = new Person(6, "Li", Gender.MALE, LocalDate.of(2001, Month.MAY, 9), 2.400);
 
-        List<Person> persons = Arrays.asList(ken, donna, chris, laynie, lee);
-        return persons;
+        return Arrays.asList(ken, jeff, donna, chris, laynie, lee);
     }
 
     @Override
