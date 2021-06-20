@@ -1,4 +1,4 @@
-package com.amberlion.otherStuff.streams;
+package com.amberlion.otherStuff.streams.builderPattern;
 
 
 import java.util.ArrayList;
