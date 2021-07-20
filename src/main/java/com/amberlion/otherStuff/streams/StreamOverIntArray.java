@@ -20,5 +20,6 @@ public class StreamOverIntArray {
                         .count())));
 
         System.out.println(students);
+        students.entrySet().forEach(i-> System.out.println(i.getKey() + ": " +i.getValue()));
     }
 }
