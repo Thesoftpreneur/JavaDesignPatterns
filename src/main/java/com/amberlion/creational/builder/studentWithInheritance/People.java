@@ -2,9 +2,9 @@ package com.amberlion.creational.builder.studentWithInheritance;
 
 public class People {
 
-    private String name;
+    private final String name;
 
-    private int age;
+    private final int age;
 
     protected People(Builder<?> builder) {
         this.name = builder.name;

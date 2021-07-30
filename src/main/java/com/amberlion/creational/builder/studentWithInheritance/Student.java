@@ -2,7 +2,7 @@ package com.amberlion.creational.builder.studentWithInheritance;
 
 public class Student extends People {
 
-    private String school;
+    private final String school;
 
     public Student(Builder builder) {
         super(builder);
