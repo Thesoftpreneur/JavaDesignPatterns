@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.amberlion.otherStuff.generics.ereader.readable</OriginalElement>
+  <nodes>
+    <node x="152.0" y="81.0">com.amberlion.otherStuff.generics.ereader.readable.Magazine</node>
+    <node x="0.0" y="0.0">com.amberlion.otherStuff.generics.ereader.readable.WrittenForm</node>
+    <node x="46.0" y="81.0">com.amberlion.otherStuff.generics.ereader.readable.Book</node>
+    <node x="182.25" y="0.0">com.amberlion.otherStuff.generics.ereader.readable.Readable</node>
+    <node x="43.5" y="162.0">com.amberlion.otherStuff.generics.ereader.readable.Novel</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.amberlion.otherStuff.generics.ereader.readable.Magazine" target="com.amberlion.otherStuff.generics.ereader.readable.WrittenForm" relationship="GENERALIZATION">
+      <point x="-29.25" y="-15.5" />
+      <point x="181.25" y="51.0" />
+      <point x="67.5" y="51.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.amberlion.otherStuff.generics.ereader.readable.Magazine" target="com.amberlion.otherStuff.generics.ereader.readable.Readable" relationship="REALIZATION">
+      <point x="29.25" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.amberlion.otherStuff.generics.ereader.readable.Novel" target="com.amberlion.otherStuff.generics.ereader.readable.Book" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.amberlion.otherStuff.generics.ereader.readable.Book" target="com.amberlion.otherStuff.generics.ereader.readable.WrittenForm" relationship="GENERALIZATION">
+      <point x="-21.5" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.amberlion.otherStuff.generics.ereader.readable.Book" target="com.amberlion.otherStuff.generics.ereader.readable.Readable" relationship="REALIZATION">
+      <point x="21.5" y="-15.5" />
+      <point x="110.5" y="61.0" />
+      <point x="239.75" y="61.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="149.0" y="96.5" />
+  <SelectedNodes>
+    <node>com.amberlion.otherStuff.generics.ereader.readable.WrittenForm</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
