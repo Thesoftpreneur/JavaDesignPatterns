@@ -24,6 +24,10 @@ public class EReader<T extends WrittenForm & Readable>  {
         itemList.forEach(Readable::read);
     }
 
+    /*
+     * "? extends Book" means that the type can be any that extends the Book class (eg Novel)
+     * or Book class itself
+     */
     void readAllBooksFromBooklist(List<? extends Book> bookList) {
         bookList.forEach(Readable::read);
     }
