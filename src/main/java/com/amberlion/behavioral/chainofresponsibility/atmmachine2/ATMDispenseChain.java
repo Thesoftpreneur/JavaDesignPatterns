@@ -1,5 +1,10 @@
 package com.amberlion.behavioral.chainofresponsibility.atmmachine2;
 
+import com.amberlion.behavioral.chainofresponsibility.atmmachine2.dispensers.DispenseChain;
+import com.amberlion.behavioral.chainofresponsibility.atmmachine2.dispensers.Dollar10Dispenser;
+import com.amberlion.behavioral.chainofresponsibility.atmmachine2.dispensers.Dollar20Dispenser;
+import com.amberlion.behavioral.chainofresponsibility.atmmachine2.dispensers.Dollar50Dispenser;
+
 import java.util.Scanner;
 
 public class ATMDispenseChain {

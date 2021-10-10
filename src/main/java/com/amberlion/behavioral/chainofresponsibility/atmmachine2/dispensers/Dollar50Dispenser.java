@@ -1,4 +1,6 @@
-package com.amberlion.behavioral.chainofresponsibility.atmmachine2;
+package com.amberlion.behavioral.chainofresponsibility.atmmachine2.dispensers;
+
+import com.amberlion.behavioral.chainofresponsibility.atmmachine2.Currency;
 
 public class Dollar50Dispenser implements DispenseChain {
     private DispenseChain chain;
