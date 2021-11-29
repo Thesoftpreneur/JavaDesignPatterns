@@ -1,6 +1,6 @@
 package com.amberlion.behavioral.observer.pointofsale.observer;
 
-public class CustomerDisplay extends Observer {
+public class CustomerDisplay implements Observer {
 
     @Override
     public void update(String str) {
